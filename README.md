@@ -8,4 +8,4 @@ Link: https://www.kaggle.com/c/statoil-iceberg-classifier-challenge
 
 Install Tensorflow; Keras
 
-Python
+Python 3.6
