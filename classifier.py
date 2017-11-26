@@ -36,8 +36,6 @@ if __name__ == "__main__":
         images.append(image)
         labels.append(j["is_iceberg"])
 
-    print (sum(labels))
-    print (len(labels))
     images = np.array(images)
     labels = np.array(labels)
 
