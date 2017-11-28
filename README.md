@@ -6,6 +6,6 @@ Ship or iceberg, can you decide from space?
 
 Link: https://www.kaggle.com/c/statoil-iceberg-classifier-challenge
 
-Install Tensorflow; Keras
+Install tensorflow; keras; sklearn
 
-Python 2.7 or 3.6
+Python 2.7 or 3.5/3.6
