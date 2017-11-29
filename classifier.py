@@ -9,6 +9,7 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
+from keras import callbacks
 from sklearn.model_selection import StratifiedKFold
 
 # Stackoverflow to deal with python versions
@@ -69,7 +70,9 @@ if __name__ == "__main__":
     model = Sequential()
 
     model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(75, 75, 3)))
+
     model.add(Conv2D(32, (3, 3), activation='relu'))
+
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Dropout(0.25))
 
@@ -89,10 +92,12 @@ if __name__ == "__main__":
 
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-    model.fit(images, labels, validation_split=.10, batch_size=32, epochs=20, verbose=1)
+    csv_logger = callbacks.CSVLogger("test1_epoch_results.log", separator=",", append=False)
+    model.fit(images, labels, validation_split=.10, batch_size=32, epochs=20, verbose=1, callbacks=[csv_logger])
 
     labels_test = model.predict(images_test, batch_size=32, verbose=1)
-    labels_test = np.around(labels_test, decimals=0)
+
+    np.savetxt("test1_6lay_10stdval_default.csv", labels_test, delimiter=",")
 
     with open("ids.csv", "w") as idsfile:
         wr = csv.writer(idsfile, dialect="excel")
