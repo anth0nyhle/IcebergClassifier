@@ -59,52 +59,52 @@ if __name__ == "__main__":
 
     images_test = np.array(images_test)
 
-    # seed = 7
-    # np.random.seed(seed)
-    #
-    # kfold = StratifiedKFold(n_splits=10, shuffle=True, random_state=seed)
-    # cvscores = []
-    #
-    # for train, test in kfold.split(images, labels):
+    seed = 7
+    np.random.seed(seed)
 
-    model = Sequential()
+    kfold = StratifiedKFold(n_splits=10, shuffle=True, random_state=seed)
+    cvscores = []
 
-    model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(75, 75, 3)))
+    for train, test in kfold.split(images, labels):
+        model = Sequential()
 
-    model.add(Conv2D(32, (3, 3), activation='relu'))
+        model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(75, 75, 3)))
 
-    model.add(MaxPooling2D(pool_size=(2, 2)))
-    model.add(Dropout(0.25))
+        model.add(Conv2D(32, (3, 3), activation='relu'))
 
-    # model.add(Conv2D(64, (3, 3), activation='relu'))
-    # model.add(Conv2D(64, (3, 3), activation='relu'))
-    # model.add(MaxPooling2D(pool_size=(2, 2)))
-    # model.add(Dropout(0.25))
+        model.add(MaxPooling2D(pool_size=(2, 2)))
+        model.add(Dropout(0.25))
 
-    model.add(Flatten())
-    model.add(Dense(64, activation='relu'))
-    model.add(Dropout(0.5))
+        # model.add(Conv2D(64, (3, 3), activation='relu'))
+        # model.add(Conv2D(64, (3, 3), activation='relu'))
+        # model.add(MaxPooling2D(pool_size=(2, 2)))
+        # model.add(Dropout(0.25))
 
-    model.add(Dense(64, activation='relu'))
-    model.add(Dropout(0.5))
+        model.add(Flatten())
+        model.add(Dense(64, activation='relu'))
+        model.add(Dropout(0.5))
 
-    model.add(Dense(1, activation='sigmoid'))
+        model.add(Dense(64, activation='relu'))
+        model.add(Dropout(0.5))
 
-    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+        model.add(Dense(1, activation='sigmoid'))
 
-    csv_logger = callbacks.CSVLogger("test1_epoch_results.log", separator=",", append=False)
-    model.fit(images, labels, validation_split=.10, batch_size=32, epochs=20, verbose=1, callbacks=[csv_logger])
+        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+        csv_logger = callbacks.CSVLogger("test2_epoch_results.log", separator=",", append=False)
+        model.fit(images[train], labels[train], batch_size=32, epochs=20, verbose=1, callbacks=[csv_logger])
+
+        scores = model.evaluate(images[test], labels[test], verbose=1)
+        print("%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
+        cvscores.append(scores[1] * 100)
+
+    print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
 
     labels_test = model.predict(images_test, batch_size=32, verbose=1)
 
-    np.savetxt("test1_6lay_10stdval_default.csv", labels_test, delimiter=",")
+    np.savetxt("test2_6lay_10crossval.csv", labels_test, delimiter=",")
+    np.savetxt("test2_dev_acc.csv", scores, delimiter=",")
 
-    with open("ids.csv", "w") as idsfile:
-        wr = csv.writer(idsfile, dialect="excel")
-        wr.writerow(ids)
-
-    #     scores = model.evaluate(images[test], labels[test], verbose=1)
-    #     print("%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
-    #     cvscores.append(scores[1] * 100)
-    #
-    # print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
+    # with open("ids.csv", "w") as idsfile:
+    #     wr = csv.writer(idsfile, dialect="excel")
+    #     wr.writerow(ids)
