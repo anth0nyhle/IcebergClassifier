@@ -59,6 +59,14 @@ if __name__ == "__main__":
 
     images_test = np.array(images_test)
 
+    # seed = 7
+    # np.random.seed(seed)
+    #
+    # kfold = StratifiedKFold(n_splits=10, shuffle=True, random_state=seed)
+    # cvscores = []
+    #
+    # for train, test in kfold.split(images, labels):
+
     model = Sequential()
 
     model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(75, 75, 3)))
@@ -94,3 +102,9 @@ if __name__ == "__main__":
     with open("ids.csv", "w") as idsfile:
         wr = csv.writer(idsfile, dialect="excel")
         wr.writerow(ids)
+
+    #     scores = model.evaluate(images[test], labels[test], verbose=1)
+    #     print("%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
+    #     cvscores.append(scores[1] * 100)
+    #
+    # print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
