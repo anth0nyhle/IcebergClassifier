@@ -114,12 +114,21 @@ if __name__ == "__main__":
     print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
 
     labels_test = model.predict(images_test, batch_size=32, verbose=1)
+    labels_test = np.array(labels_test)
+    labels_test = np.round(labels_test, decimals=1)
 
     np.savetxt("test2_6lay_10crossval_predlabels.csv", labels_test, delimiter=",")
     np.savetxt("test2_6lay_10crossval_dev_acc.csv", cvscores, delimiter=",")
 
-    with open("test2_submission.csv", "w", newline="") as submission_file:
+    with open("test2_submission.csv", "w") as submission_file:
         wr = csv.writer(submission_file, delimiter=",")
         wr.writerow(["id", "is_iceberg"])
         for i, p in zip(ids, labels_test):
             wr.writerow((i, p))
+
+    # submission = []
+    #
+    # for i, p in zip(ids, labels_test):
+    #     submission.append((i, p))
+    #
+    # np.savetxt("test2_submission.csv", submission, delimiter=",")
