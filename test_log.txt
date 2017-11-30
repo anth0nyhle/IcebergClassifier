@@ -1,12 +1,23 @@
 CNN Model Layer Setups
 
-test1: default, all ReLU, output sigmoid  - 2 2Dconv32_ / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
-test2: 10-fold cross-validation, all ReLU, output sigmoid - 2 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
-test3: 10-fold cross-validation, all ReLU, output sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
-test4: 10-fold cross-validation, all ReLU, output sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 2 dense_64 / 1 dense_1
-test5: 10-fold cross-validation, all ReLU, output sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_1
-test6: 10-fold cross-validation, all ReLU, output sigmoid - 1 2Dconv_18 / 1 max pooling / 1 2Dconv_18 / 1 max pooling / 0.25 DO / flatten / 1 dense_6 / 0.25 DO / 1 dense_3 / 0.25 DO / 1 dense_1
-test7: 10-fold cross-validation, all ReLU, output sigmoid - 1 2Dconv_18 / 1 max pooling / 1 2Dconv_18 / 1 max pooling / 0.25 DO / flatten / 1 dense_6 / 0.5 DO / 1 dense_3 / 0.5 DO / 1 dense_1
-test8: 10-fold cross-validation, all ReLU, output sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
-test9 (test2 rerun): 10-fold cross-validation, all ReLU, output sigmoid - 2 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
-test10 (test3 rerun): test3: 10-fold cross-validation, all ReLU, output sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test1: default, all ReLU, output Sigmoid  - 2 2Dconv32_ / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test2: 10-fold cross-validation, all ReLU, output Sigmoid - 2 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test3: 10-fold cross-validation, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test4: 10-fold cross-validation, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 2 dense_64 / 1 dense_1
+test5: 10-fold cross-validation, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_1
+test6: 10-fold cross-validation, all ReLU, output Sigmoid - 1 2Dconv_18 / 1 max pooling / 1 2Dconv_18 / 1 max pooling / 0.25 DO / flatten / 1 dense_6 / 0.25 DO / 1 dense_3 / 0.25 DO / 1 dense_1
+test7: 10-fold cross-validation, all ReLU, output Sigmoid - 1 2Dconv_18 / 1 max pooling / 1 2Dconv_18 / 1 max pooling / 0.25 DO / flatten / 1 dense_6 / 0.5 DO / 1 dense_3 / 0.5 DO / 1 dense_1
+test8: 10-fold cross-validation, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test9 (test2 rerun): 10-fold cross-validation, all ReLU, output Sigmoid - 2 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test10 (test3 rerun): test3: 10-fold cross-validation, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+
+test11: 10-fold cross-validation, all SoftPlus, output Sigmoid - 2 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test12: 10-fold cross-validation, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test13: 10-fold cross-validation, all SoftPlus, output Hard Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+test14: 10-fold cross-validation, all SoftMax, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+
+test15:
+
+Note1: Linear and TanH activation functions in output layer results in terrible performance
+Note2: Hard Sigmoid in output layer does not show any learning occurring (~50% acc on training and dev)
+

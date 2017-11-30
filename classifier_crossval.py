@@ -70,13 +70,14 @@ if __name__ == "__main__":
 
     for train, test in kfold.split(images, labels):
         count += 1
-        print("Iteration:", count)
+        print("Iteration:", count, "--------------------------------------------------------------------------")
 
         model = Sequential()
 
         model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(75, 75, 3)))
 
         # model.add(MaxPooling2D(pool_size=(2, 2)))
+        # model.add(Dropout(0.25))
 
         model.add(Conv2D(32, (3, 3), activation='relu'))
 
@@ -96,14 +97,14 @@ if __name__ == "__main__":
         model.add(Dense(64, activation='relu'))
         model.add(Dropout(0.5))
 
-        # model.add(Dense(64, activation='relu'))
+        # model.add(Dense(64, activation='softplus'))
         # model.add(Dropout(0.5))
 
         model.add(Dense(1, activation='sigmoid'))
 
         model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-        csv_logger = callbacks.CSVLogger("test10_7lay_10crossval_epoch_results.log", separator=",", append=True)
+        csv_logger = callbacks.CSVLogger("test2_6lay_10crossval_epoch_results.log", separator=",", append=True)
         model.fit(images[train], labels[train], batch_size=32, epochs=20, verbose=1, callbacks=[csv_logger])
 
         scores = model.evaluate(images[test], labels[test], verbose=1)
@@ -114,9 +115,11 @@ if __name__ == "__main__":
 
     labels_test = model.predict(images_test, batch_size=32, verbose=1)
 
-    np.savetxt("test10_7lay_10crossval_predlabels.csv", labels_test, delimiter=",")
-    np.savetxt("test10_7lay_10crossval_dev_acc.csv", cvscores, delimiter=",")
+    np.savetxt("test2_6lay_10crossval_predlabels.csv", labels_test, delimiter=",")
+    np.savetxt("test2_6lay_10crossval_dev_acc.csv", cvscores, delimiter=",")
 
-    # with open("ids.csv", "w") as idsfile:
-    #     wr = csv.writer(idsfile, dialect="excel")
-    #     wr.writerow(ids)
+    with open("test2_submission.csv", "w", newline="") as submission_file:
+        wr = csv.writer(submission_file, delimiter=",")
+        wr.writerow(["id", "is_iceberg"])
+        for i, p in zip(ids, labels_test):
+            wr.writerow((i, p))
