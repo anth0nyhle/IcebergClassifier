@@ -12,6 +12,8 @@ test9: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_
 test10: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test11: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test12: default, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test13: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test14: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 
 
 Note1: Linear and TanH activation functions in output layer results in terrible performance
