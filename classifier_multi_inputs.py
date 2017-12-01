@@ -30,7 +30,7 @@ if __name__ == "__main__":
     labels = []
     inc_angles = []
     for j in data_loaded:
-        third_channel = np.array(np.full((75, 75), j["inc_angle"]))
+        third_channel = np.array(np.full((75, 75), j["inc_angle"])).reshape(third_channel.shape)
         first_channel = np.array(j["band_1"]).reshape(third_channel.shape)
         second_channel = np.array(j["band_2"]).reshape(third_channel.shape)
         image = np.array([first_channel, second_channel, third_channel])
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     ids = []
     inc_angles_test = []
     for k in test_loaded:
-        third_channel_test = np.array(np.full((75, 75), k["inc_angle"]))
+        third_channel_test = np.array(np.full((75, 75), k["inc_angle"])).reshape(third_channel_test.shape)
         first_channel_test = np.array(k["band_1"]).reshape(third_channel_test.shape)
         second_channel_test = np.array(k["band_2"]).reshape(third_channel_test.shape)
         image_test = np.array([first_channel_test, second_channel_test, third_channel_test])
