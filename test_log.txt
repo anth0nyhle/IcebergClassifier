@@ -13,13 +13,26 @@ test10: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv
 test11: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test12: default, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test13: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-test14: 10-fold cross-validation, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test14: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test15: default, include inc_angles, 50 epochs, all SoftPlus, output SoftSign - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-test16:
+test16: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test17: default, include inc_angles, 50 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test18: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test19: default, include inc_angles, 100 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test20: default, include inc_angles, 100 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / / 1 dense_64 / 1 dense_64 / 1 dense_1
+test21: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test22: 10-fold cross-validation, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 
-Note1: Linear and TanH activation functions in output layer results in terrible performance
+Note1: Linear, TanH, SoftSign activation functions in output layer results in terrible performance
 Note2: Hard Sigmoid in output layer does not show any learning occurring (~50% acc on training and dev)
 Note3: Generating rotated and shifted images does not help much
+Note4: ReLU seems to be the best activation function overall
+Note5: 12 layers total is overkill
+Note6: Need some dropout to avoid overfitting; possible overfitting in test19
+Note7: One dropout of 50% after last pooling layer may be too much
+Note8: Inclusion of inc_angles does not seem to help much or make a huge difference
+
+Submitted: test2, test3, test11, test12, test18
 
 Best: test3
 

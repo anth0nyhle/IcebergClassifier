@@ -108,8 +108,8 @@ if __name__ == "__main__":
 
         model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-        csv_logger = callbacks.CSVLogger("test14_10lay_10crossval_epoch_results.log", separator=",", append=True)
-        model.fit(images[train], labels[train], batch_size=32, epochs=20, verbose=1, callbacks=[csv_logger])
+        csv_logger = callbacks.CSVLogger("test22_10lay_10crossval_epoch_results.log", separator=",", append=True)
+        model.fit(images[train], labels[train], batch_size=32, epochs=50, verbose=1, callbacks=[csv_logger])
         # model.fit_generator(datagen.flow(images, labels, batch_size=32), steps_per_epoch=len(images) / 32, epochs=20,
                             # verbose=1, callbacks=[csv_logger])
 
@@ -121,14 +121,14 @@ if __name__ == "__main__":
 
     labels_test = model.predict(images_test, batch_size=32, verbose=1)
 
-    np.savetxt("test14_10lay_10crossval_predlabels.csv", labels_test, delimiter=",")
-    np.savetxt("test14_10lay_10crossval_dev_acc.csv", cvscores, delimiter=",")
+    np.savetxt("test22_10lay_10crossval_predlabels.csv", labels_test, delimiter=",")
+    np.savetxt("test22_10lay_10crossval_dev_acc.csv", cvscores, delimiter=",")
 
     # with open("ids.csv", "w") as idsfile:
     #     wr = csv.writer(idsfile, dialect="excel")
     #     wr.writerow(ids)
 
-    with open("test14_submission.csv", "w") as submission_file:
+    with open("test22_submission.csv", "w") as submission_file:
         wr = csv.writer(submission_file, delimiter=",")
         wr.writerow(["id", "is_iceberg"])
         for i, p in zip(ids, labels_test):
