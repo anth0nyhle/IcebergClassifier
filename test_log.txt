@@ -13,10 +13,13 @@ test10: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv
 test11: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test12: default, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test13: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-test14: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-
+test14: 10-fold cross-validation, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test15: default, include inc_angles, 50 epochs, all SoftPlus, output SoftSign - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test16:
 
 Note1: Linear and TanH activation functions in output layer results in terrible performance
 Note2: Hard Sigmoid in output layer does not show any learning occurring (~50% acc on training and dev)
 Note3: Generating rotated and shifted images does not help much
+
+Best: test3
 
