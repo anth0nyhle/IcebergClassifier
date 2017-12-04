@@ -39,6 +39,11 @@ if __name__ == "__main__":
         inc_angles.append(j["inc_angle"])
 
     # datagen = ImageDataGenerator(rotation_range=90)
+    # datagen = ImageDataGenerator(zca_whitening=True)
+    # datagen = ImageDataGenerator(width_shift_range=0.2, height_shift_range=0.2)
+    # datagen = ImageDataGenerator(horizontal_flip=True)
+    # datagen = ImageDataGenerator(vertical_flip=True)
+
     # datagen.fit(images)
 
     with open("test.json") as test_file:
@@ -77,58 +82,66 @@ if __name__ == "__main__":
 
         model = Sequential()
 
-        model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(75, 75, 3)))
+        # ---------- CONVOLUTIONAL LAYER BLOCKS ----------
+        model.add(Conv2D(32, (3, 3), activation='softplus', input_shape=(75, 75, 3)))
 
         model.add(MaxPooling2D(pool_size=(2, 2)))
-        # model.add(Dropout(0.25))
+        model.add(Dropout(0.25))
 
-        model.add(Conv2D(32, (3, 3), activation='relu'))
+        model.add(Conv2D(32, (3, 3), activation='softplus'))
 
         model.add(MaxPooling2D(pool_size=(2, 2)))
         model.add(Dropout(0.25))
 
         model.add(Flatten())
 
-        model.add(Dense(64, activation='relu'))
+        # ---------- CORE LAYERS ----------
+        model.add(Dense(64, activation='softplus'))
+        # model.add(Dropout(0.1))
+
+        model.add(Dense(64, activation='softplus'))
+        # model.add(Dropout(0.1))
+
+        model.add(Dense(64, activation='softplus'))
+        # model.add(Dropout(0.1))
+
+        model.add(Dense(64, activation='softplus'))
+        # model.add(Dropout(0.1))
+
+        model.add(Dense(64, activation='softplus'))
+        # model.add(Dropout(0.1))
+
+        # model.add(Dense(64, activation='relu'))
         # model.add(Dropout(0.25))
 
-        model.add(Dense(64, activation='relu'))
-        # model.add(Dropout(0.25))
-
-        model.add(Dense(64, activation='relu'))
-        # model.add(Dropout(0.25))
-
-        model.add(Dense(64, activation='relu'))
-        # model.add(Dropout(0.25))
-
-        model.add(Dense(64, activation='relu'))
-        # model.add(Dropout(0.25))
-
+        # ---------- OUTPUT LAYER ----------
         model.add(Dense(1, activation='sigmoid'))
 
         model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-        csv_logger = callbacks.CSVLogger("test22_10lay_10crossval_epoch_results.log", separator=",", append=True)
-        model.fit(images[train], labels[train], batch_size=32, epochs=50, verbose=1, callbacks=[csv_logger])
+        csv_logger = callbacks.CSVLogger("test46_10lay_10crossval_epoch_results.log", separator=",", append=True)
+        model.fit(images[train], labels[train], batch_size=32, epochs=20, verbose=1, callbacks=[csv_logger])
         # model.fit_generator(datagen.flow(images, labels, batch_size=32), steps_per_epoch=len(images) / 32, epochs=20,
                             # verbose=1, callbacks=[csv_logger])
 
         scores = model.evaluate(images[test], labels[test], verbose=1)
+        # scores = model.evaluate_generator(datagen.flow(images, labels, batch_size=32))
         print("%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
         cvscores.append(scores[1] * 100)
 
     print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
 
     labels_test = model.predict(images_test, batch_size=32, verbose=1)
+    # labels_test = model.predict_generator(datagen.flow(images_test, batch_size=32))
 
-    np.savetxt("test22_10lay_10crossval_predlabels.csv", labels_test, delimiter=",")
-    np.savetxt("test22_10lay_10crossval_dev_acc.csv", cvscores, delimiter=",")
+    np.savetxt("test46_10lay_10crossval_predlabels.csv", labels_test, delimiter=",")
+    np.savetxt("test46_10lay_10crossval_dev_acc.csv", cvscores, delimiter=",")
 
     # with open("ids.csv", "w") as idsfile:
     #     wr = csv.writer(idsfile, dialect="excel")
     #     wr.writerow(ids)
 
-    with open("test22_submission.csv", "w") as submission_file:
+    with open("test46_submission.csv", "w") as submission_file:
         wr = csv.writer(submission_file, delimiter=",")
         wr.writerow(["id", "is_iceberg"])
         for i, p in zip(ids, labels_test):

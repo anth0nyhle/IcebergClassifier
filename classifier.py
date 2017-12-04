@@ -29,7 +29,10 @@ if __name__ == "__main__":
     labels = []
     inc_angles = []
     for j in data_loaded:
-        third_channel_test = np.array(np.full((75, 75), j["inc_angle"])).reshape(third_channel.shape)
+        inc_angle = j["inc_angle"]
+        if inc_angle == "na":
+            inc_angle = 0
+        third_channel = np.array(np.full((75, 75), inc_angle)).reshape(third_channel.shape)
         first_channel = np.array(j["band_1"]).reshape(third_channel.shape)
         second_channel = np.array(j["band_2"]).reshape(third_channel.shape)
         image = np.array([first_channel, second_channel, third_channel])
@@ -47,7 +50,10 @@ if __name__ == "__main__":
     inc_angles_test = []
     ids = []
     for k in test_loaded:
-        third_channel_test = np.array(np.full((75, 75), k["inc_angle"])).reshape(third_channel_test.shape)
+        inc_angle_test = k["inc_angle"]
+        if inc_angle_test == "na":
+            inc_angle_test = 0
+        third_channel_test = np.array(np.full((75, 75), inc_angle_test)).reshape(third_channel_test.shape)
         first_channel_test = np.array(k["band_1"]).reshape(third_channel_test.shape)
         second_channel_test = np.array(k["band_2"]).reshape(third_channel_test.shape)
         image_test = np.array([first_channel_test, second_channel_test, third_channel_test])
@@ -78,7 +84,7 @@ if __name__ == "__main__":
     model.add(Conv2D(32, (3, 3), activation='relu'))
 
     model.add(MaxPooling2D(pool_size=(2, 2)))
-    model.add(Dropout(0.5))
+    # model.add(Dropout(0.25))
 
     model.add(Flatten())
 
@@ -91,23 +97,17 @@ if __name__ == "__main__":
     model.add(Dense(64, activation='relu'))
     # model.add(Dropout(0.25))
 
-    model.add(Dense(64, activation='relu'))
+    # model.add(Dense(64, activation='relu'))
     # model.add(Dropout(0.25))
 
-    model.add(Dense(64, activation='relu'))
-    # model.add(Dropout(0.25))
-
-    model.add(Dense(64, activation='relu'))
-    # model.add(Dropout(0.25))
-
-    model.add(Dense(64, activation='relu'))
+    # model.add(Dense(64, activation='relu'))
     # model.add(Dropout(0.25))
 
     model.add(Dense(1, activation='sigmoid'))
 
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-    csv_logger = callbacks.CSVLogger("test20_12lay_epoch_results.log", separator=",", append=False)
+    csv_logger = callbacks.CSVLogger("test29_8lay_epoch_results.log", separator=",", append=False)
     model.fit(images, labels, validation_split=.10, batch_size=32, epochs=100, verbose=1, callbacks=[csv_logger])
     # model.fit_generator(datagen.flow(images, labels, batch_size=32), steps_per_epoch=len(images) / 32, epochs=20, verbose=1, callbacks=[csv_logger], shuffle=True)
 
@@ -117,10 +117,10 @@ if __name__ == "__main__":
 
     labels_test = model.predict(images_test, batch_size=32, verbose=1)
 
-    np.savetxt("test20_12lay_default_predlabels.csv", labels_test, delimiter=",")
-    np.savetxt("test20_12lay_default_dev_acc.csv", cvscores, delimiter=",")
+    np.savetxt("test29_8lay_default_predlabels.csv", labels_test, delimiter=",")
+    np.savetxt("test29_8lay_default_dev_acc.csv", cvscores, delimiter=",")
 
-    with open("test20_submission.csv", "w") as submission_file:
+    with open("test29_submission.csv", "w") as submission_file:
         wr = csv.writer(submission_file, delimiter=",")
         wr.writerow(["id", "is_iceberg"])
         for i, p in zip(ids, labels_test):

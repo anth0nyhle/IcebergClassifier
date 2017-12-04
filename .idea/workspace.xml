@@ -2,36 +2,212 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f291d10f-db2f-41df-9268-03b1ba81255c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test14_10lay_10crossval_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test14_10lay_10crossval_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test14_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test15_8lay_default_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test15_8lay_default_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test15_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test16_12lay_10crossval_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test16_12lay_10crossval_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test16_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test17_12lay_default_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test17_12lay_default_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test17_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test18_12lay_10crossval_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test18_12lay_10crossval_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test18_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test19_12lay_default_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test19_12lay_default_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test19_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test20_12lay_default_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test20_12lay_default_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test20_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test21_10lay_10crossval_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test21_10lay_10crossval_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test21_submission.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test22_10lay_10crossval_dev_acc.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test22_10lay_10crossval_predlabels.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test22_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/anthonyle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test23_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test23_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test23_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test24_10lay_default_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test24_10lay_default_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test24_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test25_10lay_default_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test25_10lay_default_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test25_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test26_10lay_default_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test26_10lay_default_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test26_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test27_8lay_default_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test27_8lay_default_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test27_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test28_8lay_default_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test28_8lay_default_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test28_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test29_8lay_default_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test30_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test30_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test30_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test31_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test31_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test31_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test32_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test32_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test32_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test33_12lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test33_12lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test33_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test34_12lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test34_12lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test34_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test35_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test35_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test35_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test36_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test36_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test36_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test37_8lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test37_8lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test37_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test39_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test39_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test39_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test40_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test40_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test40_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test41_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test41_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test41_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test42_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test42_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test42_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test43_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test43_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test43_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test44_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test44_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test44_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45a_9lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45a_9lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45a_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45aa_9lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45aa_9lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45aa_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45b_8lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45b_8lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45b_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45c_7lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45c_7lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test45c_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46a_9lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46a_9lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46a_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46b_8lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46b_8lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46b_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46e_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46e_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46e_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46ee_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46ee_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46ee_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46i_12lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46i_12lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46i_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46k_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46k_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46k_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46m_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46m_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46m_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46n_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46n_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46n_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46o_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46o_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46o_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46p_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46p_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46p_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46q_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46q_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46q_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46r_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46r_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46r_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46s_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46s_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test46s_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test47_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test47_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test47_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test48_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test48_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test48_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test49_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test49_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test49_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test50_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test50_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test50_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test51_10lay_10crossval_dev_acc.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test51_10lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test51_submission.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test9_7lay_10crossval_predlabels.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/test9_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test10_8lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test10_8lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test10_8lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test10_8lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test10_submission.csv" afterPath="$PROJECT_DIR$/test_results/test10_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test11_8lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test11_8lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test11_8lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test11_8lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test11_submission.csv" afterPath="$PROJECT_DIR$/test_results/test11_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test12_8lay_default_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test12_8lay_default_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test12_8lay_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test12_8lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test12_submission.csv" afterPath="$PROJECT_DIR$/test_results/test12_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test13_8lay_default_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test13_8lay_default_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test13_8lay_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test13_8lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test13_submission.csv" afterPath="$PROJECT_DIR$/test_results/test13_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test14_10lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test14_10lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test14_10lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test14_10lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test14_submission.csv" afterPath="$PROJECT_DIR$/test_results/test14_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test15_8lay_default_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test15_8lay_default_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test15_8lay_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test15_8lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test15_submission.csv" afterPath="$PROJECT_DIR$/test_results/test15_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test16_12lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test16_12lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test16_12lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test16_12lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test16_submission.csv" afterPath="$PROJECT_DIR$/test_results/test16_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test17_12lay_default_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test17_12lay_default_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test17_12lay_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test17_12lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test17_submission.csv" afterPath="$PROJECT_DIR$/test_results/test17_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test18_12lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test18_12lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test18_12lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test18_12lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test18_submission.csv" afterPath="$PROJECT_DIR$/test_results/test18_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test19_12lay_default_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test19_12lay_default_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test19_12lay_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test19_12lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test19_submission.csv" afterPath="$PROJECT_DIR$/test_results/test19_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test1_6lay_10stdval_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test1_6lay_10stdval_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test20_12lay_default_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test20_12lay_default_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test20_12lay_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test20_12lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test20_submission.csv" afterPath="$PROJECT_DIR$/test_results/test20_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test21_10lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test21_10lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test21_10lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test21_10lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test21_submission.csv" afterPath="$PROJECT_DIR$/test_results/test21_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test22_10lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test22_10lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test22_10lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test22_10lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test22_submission.csv" afterPath="$PROJECT_DIR$/test_results/test22_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test2_6lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test2_6lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test2_6lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test2_6lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test2_submission.csv" afterPath="$PROJECT_DIR$/test_results/test2_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test3_7lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test3_7lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test3_7lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test3_7lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test3_submission.csv" afterPath="$PROJECT_DIR$/test_results/test3_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test4_8lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test4_8lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test4_8lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test4_8lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test4_submission.csv" afterPath="$PROJECT_DIR$/test_results/test4_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test5_8lay_10crossval_imagerot_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test5_8lay_10crossval_imagerot_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test5_8lay_10crossval_imagerot_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test5_8lay_10crossval_imagerot_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test5_submission.csv" afterPath="$PROJECT_DIR$/test_results/test5_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test6_8lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test6_8lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test6_8lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test6_8lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test6_submission.csv" afterPath="$PROJECT_DIR$/test_results/test6_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test7_9lay_default_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test7_9lay_default_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test7_9lay_default_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test7_9lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test7_submission.csv" afterPath="$PROJECT_DIR$/test_results/test7_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test8_9lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test8_9lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test8_9lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test8_9lay_10crossval_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test8_submission.csv" afterPath="$PROJECT_DIR$/test_results/test8_submission.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test9_7lay_10crossval_dev_acc.csv" afterPath="$PROJECT_DIR$/test_results/test9_7lay_10crossval_dev_acc.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test9_7lay_10crossval_predlabels.csv" afterPath="$PROJECT_DIR$/test_results/test29_8lay_default_predlabels.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test9_submission.csv" afterPath="$PROJECT_DIR$/test_results/test29_submission.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/iceberg_classifier.iml" afterPath="$PROJECT_DIR$/.idea/iceberg_classifier.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifier.py" afterPath="$PROJECT_DIR$/classifier.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifier_crossval.py" afterPath="$PROJECT_DIR$/classifier_crossval.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifier_multi_inputs.py" afterPath="$PROJECT_DIR$/classifier_multi_inputs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_log.txt" afterPath="$PROJECT_DIR$/test_log.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,81 +228,28 @@
     <expand />
     <select />
   </component>
+  <component name="DockManager">
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="test_log.txt" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/test_log.txt">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="329">
+                    <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5197245">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="classifier.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/classifier.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="753">
-                  <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#23#36#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="classifier_crossval.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/classifier_crossval.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="56">
-                  <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#23#36#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="classifier_multi_inputs.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/classifier_multi_inputs.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#23#36#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="train.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/train.json">
-              <provider selected="true" editor-type-id="LargeFileEditor">
-                <state relative-caret-position="-223212">
-                  <caret line="0" column="78166" lean-forward="false" selection-start-line="0" selection-start-column="78166" selection-end-line="0" selection-end-column="78166" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test.json">
-              <provider selected="true" editor-type-id="LargeFileEditor">
-                <state relative-caret-position="17">
-                  <caret line="0" column="768" lean-forward="false" selection-start-line="0" selection-start-column="768" selection-end-line="0" selection-end-column="768" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_log.txt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test_log.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -167,12 +290,17 @@
         <option value="$PROJECT_DIR$/test7_9lay_epoch_results.log" />
         <option value="$PROJECT_DIR$/test11_8lay_10crossval_epoch_results.log" />
         <option value="$PROJECT_DIR$/test12_8lay_epoch_results.log" />
-        <option value="$PROJECT_DIR$/classifier_multi_inputs.py" />
         <option value="$PROJECT_DIR$/test14_10lay_10crossval_epoch_results.log" />
-        <option value="$PROJECT_DIR$/classifier.py" />
-        <option value="$PROJECT_DIR$/classifier_crossval.py" />
-        <option value="$PROJECT_DIR$/test_log.txt" />
         <option value="$PROJECT_DIR$/test22_10lay_10crossval_epoch_results.log" />
+        <option value="$PROJECT_DIR$/test24_10lay_epoch_results.log" />
+        <option value="$PROJECT_DIR$/classifier.py" />
+        <option value="$PROJECT_DIR$/test30_10lay_10crossval_epoch_results.log" />
+        <option value="$PROJECT_DIR$/test37_8lay_10crossval_epoch_results.log" />
+        <option value="$PROJECT_DIR$/classifier_multi_inputs.py" />
+        <option value="$PROJECT_DIR$/test41_10lay_10crossval_epoch_results.log" />
+        <option value="$PROJECT_DIR$/test51_submission.csv" />
+        <option value="$PROJECT_DIR$/test_log.txt" />
+        <option value="$PROJECT_DIR$/classifier_crossval.py" />
       </list>
     </option>
   </component>
@@ -183,10 +311,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1292" />
-    <option name="y" value="221" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1291" />
+    <option name="y" value="220" />
+    <option name="width" value="1937" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -223,7 +351,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,12 +362,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Anaconda3/envs/python3/python.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_results" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -339,19 +472,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1072" y="127" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32794458" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5604311" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5608696" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22632794" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15925337" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12934783" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -360,7 +494,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -390,138 +523,74 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test5_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test12_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test4_8lay_10crossval_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test17_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test6_8lay_10crossval_epoch_results.log">
+    <entry file="file://$PROJECT_DIR$/test_results/test19_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test39_10lay_10crossval_dev_acc.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test41_10lay_10crossval_epoch_results.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-1423">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test39_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test40_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test42_10lay_10crossval_dev_acc.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test43_10lay_10crossval_epoch_results.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test6_8lay_10crossval_dev_acc.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test7_9lay_epoch_results.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test7_9lay_default_dev_acc.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3_7lay_10crossval_predlabels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test5_8lay_10crossval_imagerot_predlabels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test7_9lay_default_predlabels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2_6lay_10crossval_predlabels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test8_9lay_10crossval_predlabels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test8_9lay_10crossval_dev_acc.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test10_submission.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test11_8lay_10crossval_epoch_results.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test11_8lay_10crossval_dev_acc.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test12_8lay_epoch_results.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test11_submission.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test13_8lay_10crossval_epoch_results.log" />
-    <entry file="file://$PROJECT_DIR$/test12_submission.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142686">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test13_8lay_default_dev_acc.csv" />
-    <entry file="file://$PROJECT_DIR$/test13_8lay_default_predlabels.csv" />
-    <entry file="file://$PROJECT_DIR$/test14_10lay_10crossval_epoch_results.log" />
-    <entry file="file://$PROJECT_DIR$/test13_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test41_10lay_10crossval_dev_acc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -529,7 +598,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test14_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test3_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test42_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -537,22 +613,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test14_10lay_10crossval_predlabels.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test43_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-3088">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test14_10lay_10crossval_dev_acc.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test16_12lay_12crossval_dev_acc.csv" />
-    <entry file="file://$PROJECT_DIR$/test16_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test43_10lay_10crossval_dev_acc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -560,7 +629,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test16_12lay_10crossval_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test44_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -568,7 +637,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test17_12lay_default_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test45_10lay_10crossval_dev_acc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -576,7 +645,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test18_12lay_10crossval_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test47_10lay_10crossval_dev_acc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -584,7 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test19_12lay_default_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test48_10lay_10crossval_dev_acc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -592,22 +661,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test19_12lay_default_predlabels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5712">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-223212">
-          <caret line="0" column="78166" lean-forward="false" selection-start-line="0" selection-start-column="78166" selection-end-line="0" selection-end-column="78166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test18_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test48_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -615,7 +669,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test19_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test49_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -623,15 +677,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test20_submission.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4335">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3_7lay_10crossval_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test50_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -639,15 +685,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test3_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test51_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test15_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test45a_10lay_10crossval_dev_acc.csv" />
+    <entry file="file://$PROJECT_DIR$/test_results/test45_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -655,7 +702,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test21_10lay_10crossval_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test45b_8lay_10crossval_dev_acc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -663,74 +710,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test20_12lay_epoch_results.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
+    <entry file="file://$PROJECT_DIR$/test_results/test47_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier_crossval.py">
+    <entry file="file://$PROJECT_DIR$/test_results/test45a_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
-          <folding>
-            <element signature="e#23#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test45b_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test45c_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7469">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test45aa_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46_10lay_10crossval_dev_acc.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46a_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46b_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4389">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test41_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classifier_multi_inputs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="1875">
+          <caret line="137" column="21" lean-forward="false" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
           <folding>
             <element signature="e#23#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier.py">
+    <entry file="file://$PROJECT_DIR$/test_results/test46i_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-7674">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="17">
-          <caret line="0" column="768" lean-forward="false" selection-start-line="0" selection-start-column="768" selection-end-line="0" selection-end-column="768" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test22_10lay_10crossval_epoch_results.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
+    <entry file="file://$PROJECT_DIR$/test_results/test46ee_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test22_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test46e_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173">
+        <state relative-caret-position="-2679">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test21_submission.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test46_submission.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
+        <state relative-caret-position="-6678">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test22_10lay_10crossval_dev_acc.csv">
+    <entry file="file://$PROJECT_DIR$/test_results/test46p_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46o_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46o_10lay_10crossval_dev_acc.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46r_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2244">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46q_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2007">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46s_submission.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/test46k_10lay_10crossval_dev_acc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -740,9 +882,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_log.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        <state relative-caret-position="329">
+          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier_crossval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2115">
+          <caret line="141" column="26" lean-forward="true" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>

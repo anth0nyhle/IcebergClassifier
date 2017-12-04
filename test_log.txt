@@ -1,8 +1,10 @@
 CNN Model Layer Setups
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Preliminary Experiments
 test1: default, 20 epochs, all ReLU, output Sigmoid  - 2 2Dconv32_ / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
 test2: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 2 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
-test3: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
+*test3: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
 test4: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / / 1 dense_64 / 0.5 DO / 1 dense_1
 test5: 10-fold cross-validation, image rotation_90, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / / 1 dense_64 / 0.5 DO / 1 dense_1
 test6: 10-fold cross-validation, 20 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_64 / 0.5 DO / 1 dense_1
@@ -14,25 +16,200 @@ test11: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv
 test12: default, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test13: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test14: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-test15: default, include inc_angles, 50 epochs, all SoftPlus, output SoftSign - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test15: default, include inc_angles (false), 50 epochs, all SoftPlus, output SoftSign - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test16: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-test17: default, include inc_angles, 50 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test17: default, include inc_angles (false), 50 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test18: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-test19: default, include inc_angles, 100 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
-test20: default, include inc_angles, 100 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / / 1 dense_64 / 1 dense_64 / 1 dense_1
+test19: default, include inc_angles (false), 100 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test20: default, include inc_angles (false), 100 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / / 1 dense_64 / 1 dense_64 / 1 dense_1
 test21: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 test22: 10-fold cross-validation, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test23: 10-fold cross-validation, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10 layers
+test24: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test25: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test26: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+8 layers
+test27: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test28: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test29: default, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+7 layers
+test--: default, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_1
+test--: default, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 /  1 dense_1
+test--: default, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10 layers
+*test30: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test31: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+*test32: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test39: 10-fold cross-validation, include inc_angles, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test40: 10-fold cross-validation, include inc_angles, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.5 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+*test35: 10-fold cross-validation, include inc_angles, 50 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test36: 10-fold cross-validation, include inc_angles, 50 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 50 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 35 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 35 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 35 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+test--: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 /  1 dense_1
+
+12 layers
+test33: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+*test34: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 /  1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 50 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 /  1 dense_1
+
+14 layers
+test--: 10-fold cross-validation, include inc_angles, 30 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+8 layers
+test37: 10-fold cross-validation, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 30 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_1
+(aborted)test38: 10-fold cross-validation, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_64 / 1 dense_1
+
+7 layers
+test--: 10-fold cross-validation, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 /  1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_1
+test--: 10-fold cross-validation, include inc_angles, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 /  1 dense_64 / 1 dense_1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dropout Parameter Sweep
+
+10 layers
+test41: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_1
+test42: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_1
+test43: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_1
+test44: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+*test45: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+**test46: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test48: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.15 DO / 1 2Dconv_32 / 1 max pooling / 0.15 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test49: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.1 DO / 1 2Dconv_32 / 1 max pooling / 0.1 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test50: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.3 DO / 1 2Dconv_32 / 1 max pooling / 0.3 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test51: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.35 DO / 1 2Dconv_32 / 1 max pooling / 0.35 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Layers Parameter Sweep
+
+12 layers (6 core dense)
+test46i: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+10 layers (5 core dense)
+test45: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+9 layers (4 core dense)
+test45a: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test45aa: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 1 2Dconv_32 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46a: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47a: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+8 layers (3 core dense)
+test45b: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46b: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47b: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+7 layers (2 core dense)
+test45c: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_1
+test46c: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47c: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Epoch Parameter Sweep
+
+10 Epochs
+test46p: 10-fold cross-validation, 10 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+15 Epochs
+test46o: 10-fold cross-validation, 15 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+20 Epochs
+test45: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+22 Epochs
+test46ee: 10-fold cross-validation, 22 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+25 Epochs
+test45e: 10-fold cross-validation, 25 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46e: 10-fold cross-validation, 25 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47e: 10-fold cross-validation, 25 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+30 Epochs
+test45f: 10-fold cross-validation, 30 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46f: 10-fold cross-validation, 30 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47f: 10-fold cross-validation, 30 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+35 Epochs
+test45g: 10-fold cross-validation, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46g: 10-fold cross-validation, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47g: 10-fold cross-validation, 35 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+40 Epochs
+test45h: 10-fold cross-validation, 40 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.25 DO / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test46h: 10-fold cross-validation, 40 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+test47h: 10-fold cross-validation, 40 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.2 DO / 1 2Dconv_32 / 1 max pooling / 0.2 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Convolution Layer Filter Size Parameter Sweep
+
+128 filters
+test46j: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_128 / 1 max pooling / 0.5 DO / 1 2Dconv_128 / 1 max pooling / 0.5 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+64 filters (max 0.5 dropouts)
+test46k: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_64 / 1 max pooling / 0.5 DO / 1 2Dconv_64 / 1 max pooling / 0.5 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+32 filters (max 0.25 dropouts)
+test46l: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+18 filters (no dropouts)
+test46m: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_18 / 1 max pooling / 1 2Dconv_18 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+9 filters (no dropouts)
+test46n: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_9 / 1 max pooling / 1 2Dconv_9 / 1 max pooling / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Miscellaneous
+
+10 layers
+test46q: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.1 DO / 1 dense_64 / 0.1 DO / 1 dense_64 / 0.1 DO / 1 dense_64 / 0.1 DO / 1 dense_64 / 0.1 DO / 1 dense_1
+test46r: 10-fold cross-validation, 20 epochs, all ReLU, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 0.05 DO / 1 dense_64 / 0.05 DO / 1 dense_64 / 0.05 DO / 1 dense_64 / 0.05 DO / 1 dense_64 / 0.05 DO / 1 dense_1
+test46s: 10-fold cross-validation, 20 epochs, all SoftPlus, output Sigmoid - 1 2Dconv_32 / 1 max pooling / 0.25 DO / 1 2Dconv_32 / 1 max pooling / 0.25 DO / flatten / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_64 / 1 dense_1
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Note1: Linear, TanH, SoftSign activation functions in output layer results in terrible performance
 Note2: Hard Sigmoid in output layer does not show any learning occurring (~50% acc on training and dev)
 Note3: Generating rotated and shifted images does not help much
 Note4: ReLU seems to be the best activation function overall
-Note5: 12 layers total is overkill
+Note5: 12 layers total is overkill --> prone to overfitting
 Note6: Need some dropout to avoid overfitting; possible overfitting in test19
 Note7: One dropout of 50% after last pooling layer may be too much
 Note8: Inclusion of inc_angles does not seem to help much or make a huge difference
+Note9: Failed to correctly include inc_angles in any attempts before test24
+Note10: Too much dropouts results in poor performance i.e. ~50% on train, ~20% on dev (default)
+Note11: 50 epochs may result in overfitting --> 35 epochs gets training up to ~95% acc; avg dev_acc ~85%
+Note12: No noticeable difference b/w using ReLU and SoftPlus as activation functions
+Note13: Went back to 20 epochs; make sure it's not predicting 1 or 0 on test data
+Note14: Some inc_angles are 'na' so it's more complicated to incorporate
+Note15: Learning is limited w/ <9 layers (<4 core dense layers)
+Note16: test46 predicted iceberg for every image
 
-Submitted: test2, test3, test11, test12, test18
+Incomplete: test38
 
-Best: test3
+Submitted: test2, test3, test11, test12, test18, test37, test43, test45, test46, test47, test46a, test46o, test46r, test46s
 
+Best: test46
+Worse: test37
+
+test46 >~ test46s, test47 > test46a > test45
